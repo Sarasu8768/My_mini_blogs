@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Types Assignment</title>
+
+    <!-- Internal CSS (using <style> tag) -->
+    <style>
+        /* Internal CSS */
+        body {
+            background-color: #f2f2f2;
+        }
+        .internal-heading {
+            color: green;
+            font-size: 28px;
+        }
+        .internal-paragraph {
+            color: blue;
+            font-size: 18px;
+        }
+    </style>
+
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Without CSS (plain HTML) -->
+    <h1>This is WITHOUT CSS</h1>
+    <p>This paragraph is plain without any CSS styling.</p>
+
+    <hr>
+
+    <!-- Inline CSS -->
+    <h2 style="color: red; font-size: 26px;">This is INLINE CSS</h2>
+    <p style="background-color: yellow; font-size: 16px;">This paragraph uses INLINE CSS with the style attribute.</p>
+
+    <hr>
+
+    <!-- Internal CSS applied -->
+    <h2 class="internal-heading">This is INTERNAL CSS</h2>
+    <p class="internal-paragraph">This paragraph is styled using INTERNAL CSS inside &lt;style&gt; tag.</p>
+
+    <hr>
+
+    <!-- External CSS applied -->
+    <h2 class="external-heading">This is EXTERNAL CSS</h2>
+    <p class="external-paragraph">This paragraph is styled using an EXTERNAL CSS file (style.css).</p>
+
+</body>
+</html>
+
+
+/* External CSS */
+
+.external-heading {
+    color: darkorange;
+    font-size: 30px;
+}
+
+.external-paragraph {
+    color: darkred;
+    font-size: 20px;
+    background-color: #e0ffff;
+}
+
+
