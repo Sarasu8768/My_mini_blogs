@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spider-Man Universe</title>
+  <link rel="icon" href="images/spiderman_logo.png" type="image/png" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #spiderman {
+      width: 220px;
+      height: 220px;
+      border: 3px solid red;
+      border-radius: 10px;
+    }
+    .intro {
+      background-color: #000;
+      color: #ff0000;
+      text-align: center;
+      font-family: cursive;
+      padding: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #999;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    ul, ol {
+      margin-left: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 class="intro">
+    <marquee behavior="alternate" direction="right">
+      Welcome to the Spectacular World of <b>Spider-Man</b>!
+    </marquee>
+  </h1>
+
+  <img id="spiderman" src="images/spiderman.jpeg" alt="Spider-Man" />
+
+  <p>
+    <b>Spider-Man</b> is a fictional superhero created by writer Stan Lee 
+    and artist Steve Ditko for Marvel Comics. First appearing in 1962, Spider-Man 
+    quickly became one of the world's most popular and recognizable superheroes. 
+    Peter Parker, an ordinary teenager, gains superpowers after being bitten by 
+    a radioactive spider.
+  </p>
+
+  <h4>Main Characters</h4>
+  <ol>
+    <li>Spider-Man (Peter Parker)</li>
+    <li>Mary Jane Watson</li>
+    <li>Uncle Ben</li>
+    <li>Aunt May</li>
+    <li>Green Goblin</li>
+    <li>Doctor Octopus</li>
+  </ol>
+
+  <h4>Supporting Characters</h4>
+  <ul>
+    <li>Gwen Stacy</li>
+    <li>J. Jonah Jameson</li>
+    <li>Flash Thompson</li>
+    <li>Venom (Eddie Brock)</li>
+  </ul>
+
+  <h4>Character Information Table</h4>
+  <table>
+    <tr>
+      <th>Character</th>
+      <th>Role</th>
+      <th>Personality</th>
+      <th>Special Power</th>
+    </tr>
+    <tr>
+      <td>Spider-Man</td>
+      <td>Superhero</td>
+      <td>Brave, Smart, Selfless</td>
+      <td>Wall-Crawling, Web-Shooting, Spider-Sense</td>
+    </tr>
+    <tr>
+      <td>Mary Jane Watson</td>
+      <td>Peter's Love Interest</td>
+      <td>Confident, Caring</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>Green Goblin</td>
+      <td>Main Villain</td>
+      <td>Insane, Ruthless</td>
+      <td>Super Strength, Advanced Gadgets</td>
+    </tr>
+    <tr>
+      <td>Doctor Octopus</td>
+      <td>Villain</td>
+      <td>Genius, Arrogant</td>
+      <td>Mechanical Tentacles</td>
+    </tr>
+    <tr>
+      <td>Uncle Ben</td>
+      <td>Mentor Figure</td>
+      <td>Wise, Kind</td>
+      <td>None</td>
+    </tr>
+  </table>
+
+  <p>To know more about Spider-Man, visit this link:</p>
+  <a href="https://en.wikipedia.org/wiki/Spider-Man" target="_blank">Learn More</a>
+
+  <h4>Clickable Image Map</h4>
+  <p>Click on a character to explore more:</p>
+
+  <img src="images/click_spiderman.jpeg" alt="Spider-Man Map" usemap="#characters_map" />
+
+  <map name="characters_map">
+    <area shape="rect" coords="153,10,211,62" href="spiderman.html" alt="Spider-Man" />
+    <area shape="rect" coords="212,33,248,67" href="mary_jane.html" alt="Mary Jane" />
+    <area shape="rect" coords="79,54,108,86" href="uncle_ben.html" alt="Uncle Ben" />
+    <area shape="rect" coords="255,55,276,81" href="green_goblin.html" alt="Green Goblin" />
+    <area shape="rect" coords="125,36,151,62" href="doctor_octopus.html" alt="Doctor Octopus" />
+    <area shape="rect" coords="45,63,66,90" href="venom.html" alt="Venom" />
+    <area shape="rect" coords="284,62,315,84" href="venom.html" alt="Venom" />
+  </map>
+
+  <hr />
+
+  <h2>Responsive Image Section</h2>
+  <picture>
+    <source srcset="images/mary_jane.jpeg" media="(max-width: 650px)" />
+    <source srcset="images/green_goblin.jpeg" media="(min-width: 465px)" />
+    <img src="images/spiderman_action.jpeg" alt="Spider-Man Action" style="width:100%; max-width:600px;" />
+  </picture>
+
+</body>
+</html>
