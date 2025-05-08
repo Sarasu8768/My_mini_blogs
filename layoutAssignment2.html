@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Form - Manorama Institute of Technology</title>
+    <link rel="icon" href="images/college_logo.png" type="image/png" />
+    <style>
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background-image: url(images/campus.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        color: #4d3319;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #87ceeb;
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #d3d3d3;
+        padding: 10px;
+        text-align: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        margin: 0 15px;
+        color: black;
+        font-weight: bold;
+      }
+
+      main {
+        padding: 20px;
+        background-color: rgba(222, 184, 135, 0.95);
+        margin: auto;
+        max-width: 800px;
+        border-radius: 10px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+      }
+
+      footer {
+        background-color: #87ceeb;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .submit {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      .submit:hover {
+        background-color: #45a049;
+      }
+
+      label {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      input,
+      select,
+      textarea {
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .inlign-group {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .logo {
+        width: 100px;
+        margin-top: -70px;
+        float: left;
+      }
+
+      h1, h4 {
+        margin: 5px;
+      }
+
+      marquee {
+        color: red;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/college_logo.png" alt="College Logo">
+      <h1>Manorama Institute of Technology</h1>
+      <h4>Online Admission Form</h4>
+      <marquee behavior="alternate" direction="left">Admissions Open for 2025-26</marquee>
+    </header>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">Admission</a>
+      <a href="#">Contact Us</a>
+    </nav>
+
+    <main>
+      <h4 style="text-align: center;">Student Registration Form</h4>
+      <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label>Gender:</label>
+        <div class="inlign-group">
+          <input type="radio" id="male" name="gender" value="Male" required />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="Female" required />
+          <label for="female">Female</label>
+        </div>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" placeholder="Enter your address" required></textarea>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+          <option value="">-- Choose Course --</option>
+          <option value="bca">BCA</option>
+          <option value="mca">MCA</option>
+          <option value="bsc_cs">B.Sc Computer Science</option>
+          <option value="msc_cs">M.Sc Computer Science</option>
+          <option value="bba">BBA</option>
+          <option value="mba">MBA</option>
+          <option value="commerce">COMMERCE</option>
+        </select>
+
+        <label>Hobbies:</label>
+        <div class="inlign-group">
+          <input type="checkbox" id="reading" name="hobbies" value="Reading" />
+          <label for="reading">Reading</label>
+          <input type="checkbox" id="dancing/singing" name="hobbies" value="Dancing/Singing" />
+          <label for="dancing/singing">Dancing/Singing</label>
+          <input type="checkbox" id="sports" name="hobbies" value="Sports" />
+          <label for="sports">Sports</label>
+        </div>
+
+        <label for="password">Create Password:</label>
+        <input type="password" id="password" name="password" minlength="6" required />
+
+        <label for="id_proof">Upload ID Proof:</label>
+        <input type="file" id="id_proof" name="id_proof" accept=".pdf,.jpg,.png" required />
+
+        <input class="submit" type="submit" value="Submit Form" />
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Manorama Institute of Technology</p>
+      <p>All rights reserved.</p>
+      <p>Email: info@manoramatech.edu.in | Phone: +91 9876543210</p>
+    </footer>
+  </body>
+</html>
