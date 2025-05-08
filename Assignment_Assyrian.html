@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register Your Assyrian Roots</title>
+</head>
+<body>
+  <h2>Register Your Assyrian Roots</h2>
+  <form action="/submit" method="POST" enctype="multipart/form-data">
+    <label>Full Name: <input type="text" name="full_name" value="Ashurbanipal" required></label><br><br>
+
+    <label>Email: <input type="email" name="email" required></label><br><br>
+
+    <label>Birth Date: <input type="date" name="birth_date" required></label><br><br>
+
+    <label>Gender:
+      <select name="gender" required>
+        <option value="">Select gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </label><br><br>
+
+    <label>Tell us about your ancestry:<br>
+      <textarea name="ancestry">My family is originally from Nineveh.</textarea>
+    </label><br><br>
+
+    <label>Upload Family Crest: <input type="file" name="family_crest"></label><br><br>
+
+    <label>Create Password: <input type="password" name="password" required></label><br><br>
+
+    <label>Favorite Traditional Color: <input type="text" name="favorite_color"></label><br><br>
+
+    <label>Cultural Knowledge (0-10): 
+      <input type="range" name="cultural_knowledge" min="0" max="10" value="5">
+    </label><br><br>
+
+    <label>Your Website (optional): <input type="url" name="website" value="https://yourheritage.com"></label><br><br>
+
+    <label>Generations Traced: <input type="number" name="generations" value="3"></label><br><br>
+
+    <label>Best Time to Contact: <input type="text" name="best_time"></label><br><br>
+
+    <label><input type="checkbox" name="agree_data"> Agree to share your data</label><br><br>
+
+    <label><input type="checkbox" name="subscribe" checked> Subscribe to newsletter</label><br><br>
+
+    
+    <select id="language" name="language" required>
+          <option value="">-- Choose language --</option>
+          <option value="english">ENGLISH</option>
+          <option value="kannada">KANNADA</option>
+          <option value="hindi">HINDI</option>
+   
+    <button type="submit">Submit</button>
+  </form>
+
+  <footer>
+    <p>&copy; 2025 Assyrian Cultural Registry. All rights reserved.</p>
+  </footer>
+</body>
+</html>
